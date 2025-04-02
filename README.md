@@ -66,6 +66,21 @@ mysql -u <user_name> -p accounts < db_backup.sql
 
 ---
 
+## 🚀 Flow of Execution
+1. 🔑 **Login to AWS Account**
+2. 🔐 **Create Key Pairs**
+3. 🛡 **Create Security Groups**
+4. 📜 **Launch Instances with User Data [Bash Scripts]**
+5. 🌍 **Update IP to Name Mapping in Route 53**
+6. 🏗 **Build Application from Source Code**
+7. ☁️ **Upload to S3 Bucket**
+8. 📥 **Download Artifact to Tomcat EC2 Instance**
+9. 🔐 **Setup ELB with HTTPS [Certificate from Amazon Certificate Manager]**
+10. 🔄 **Map ELB Endpoint to Website Name in GoDaddy DNS**
+11. ✅ **Verify Deployment**
+
+---
+
 ## 🚀 Setup Instructions
 ### 1️⃣ Clone Repository
 ```bash
